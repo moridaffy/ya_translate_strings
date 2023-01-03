@@ -1,0 +1,1 @@
+# ya_translate_strings
