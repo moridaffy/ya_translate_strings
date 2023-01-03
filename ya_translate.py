@@ -19,8 +19,9 @@ outputFile = fileName + "_" + args.t + "." + fileExtension
  
 if not os.path.exists(originFile):
 	sys.exit(originFile + " not found")
+if os.path.exists(outputFile):
+	os.remove(outputFile)
 
-os.remove(outputFile)
 print("Will start translating")
 
 stringSeparator = " = "
